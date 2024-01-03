@@ -288,5 +288,5 @@ def bot_message_handler(message):
             bot.send_message(message.chat.id, "Введите текст")
             bot.register_next_step_handler(message, add_note)
 
-
-bot.polling(non_stop=True)
+if __name__ == "__main__":
+    bot.polling(non_stop=True)
